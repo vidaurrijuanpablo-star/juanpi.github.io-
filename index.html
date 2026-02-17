@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Pablo Vidaurri - Personal Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #764ba2;
+            padding-bottom: 10px;
+        }
+        
+        .card p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+            line-height: 1.8;
+        }
+        
+        .interests {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .interest-item {
+            background: #f0f4ff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        
+        .interest-item strong {
+            color: #667eea;
+        }
+        
+        .dj-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .dj-section h2 {
+            color: white;
+            border-bottom: 3px solid rgba(255,255,255,0.3);
+        }
+        
+        .location {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            margin: 5px;
+            font-weight: 500;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+            
+            .interests {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Juan Pablo Vidaurri</h1>
+        <p>Student | DJ | Future Attorney</p>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>Hello! I'm Juan Pablo Vidaurri, a junior at the University of Texas at Austin majoring in Government. I'm passionate about law and policy, and I'm aspiring to attend law school to become an attorney.</p>
+            <p>Beyond my academic pursuits, I'm a skilled DJ performing at events across Texas, Mexico, and Europe. I'm also passionate about outdoor activities like golf and fishing, which help me balance my professional aspirations with personal wellness.</p>
+        </div>
+        
+        <div class="card">
+            <h2>Education</h2>
+            <p><strong>University of Texas at Austin</strong></p>
+            <p>Major: Government</p>
+            <p>Class: Junior</p>
+            <p>Career Goal: Attend law school and become an attorney</p>
+        </div>
+        
+        <div class="card dj-section">
+            <h2>🎵 DJ Experience</h2>
+            <p>I'm an experienced DJ performing at venues and events across multiple countries:</p>
+            <div style="margin-top: 20px;">
+                <span class="location">🇺🇸 Texas</span>
+                <span class="location">🇲🇽 Mexico</span>
+                <span class="location">🇪🇺 Europe</span>
+            </div>
+            <p style="margin-top: 20px;">My DJ experience has given me valuable skills in crowd engagement, technical production, and event management.</p>
+        </div>
+        
+        <div class="card">
+            <h2>Interests & Hobbies</h2>
+            <div class="interests">
+                <div class="interest-item">
+                    <strong>⚖️ Law & Policy</strong>
+                    <p>Passionate about constitutional law and legal studies</p>
+                </div>
+                <div class="interest-item">
+                    <strong>🎵 Music Production</strong>
+                    <p>DJ and music performance</p>
+                </div>
+                <div class="interest-item">
+                    <strong>⛳ Golf</strong>
+                    <p>Enjoy recreational golfing</p>
+                </div>
+                <div class="interest-item">
+                    <strong>🎣 Fishing</strong>
+                    <p>Outdoor fishing adventures</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Connect With Me</h2>
+            <p>I'm interested in connecting with fellow students, professionals in law, and music enthusiasts. Feel free to reach out through GitHub or other professional networks.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Juan Pablo Vidaurri. All rights reserved.</p>
+        <p>Hosted on GitHub Pages</p>
+    </footer>
+</body>
+</html>
